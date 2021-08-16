@@ -192,6 +192,9 @@ img {
   text-align: center;
 }
 
+.produtos_lista li img {
+  margin: 0 auto;
+}
 .produtos_lista li h3 {
   font-size: 18px;
   font-weight: bold;
