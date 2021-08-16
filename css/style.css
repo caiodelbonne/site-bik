@@ -1,0 +1,373 @@
+/* estilo gerais*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+}
+.introducao-interna h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 08px auto;
+}
+
+.subtitulo-interno {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 08px 0;
+}
+
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn.btn-preto:hover {
+  color: black;
+  border-color: #000;
+}
+/*header*/
+
+.header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: #fec63e;
+  padding: 15px;
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.header_menu ul li {
+  display: inline-block; /* linha com espaçamento a esquerda */
+  margin-left: 21px;
+}
+
+.header_menu ul li a {
+  color: #000;
+  font-weight: bold; /* peso da fonte */
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* espaçamento entre as letras */
+  font-size: 14px;
+  line-height: 20px; /*altura da quebra de linha */
+  padding: 10px 0; /* cima em baixo tem 10 px */
+}
+
+.header_menu ul li a:hover {
+  color: white;
+}
+
+.header_menu ul li a.menu-ativo {
+  color: #fff;
+}
+
+/*introduçao*/
+.introducao {
+  margin-top: 92px;
+  height: 380px;
+  width: 100%;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/**/
+.quote-externo {
+  max-width: 315px; /*limita os caract maximo*/
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.quote-externo p {
+  font-style: italic;
+}
+
+.quote-externo p::before,
+.quote-externo p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 15px auto;
+}
+
+.introducao-interna h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 5px auto;
+}
+
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/*produtos*/
+
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 2px auto;
+}
+
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+  background: #000;
+  padding: 20px;
+}
+
+.call {
+  clear: both;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.call p {
+  margin-bottom: 25px;
+}
+/*Portifolio*/
+
+.portfolio {
+  width: 100%;
+  background: #000;
+  padding: 40px 0;
+}
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+.portfolio .subtitulo::after {
+  background: #fec63e;
+}
+.portfolio_lista li:last-child {
+  margin-top: 15px;
+}
+.portfolio .call p {
+  color: #fff;
+  font-style: italic;
+}
+
+/*qualidade*/
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade_lista {
+  padding-top: 20px;
+  overflow: auto;
+}
+.qualidade::after {
+  content: "";
+  width: 643px;
+  height: 83px;
+  background: url("../img/linhas.svg");
+  display: block;
+  position: absolute;
+  top: 209px;
+  right: 153px;
+  z-index: -1;
+}
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 6px auto;
+}
+
+/*quebr rodapé*/
+
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 40px;
+}
+.quebra .quote-externo {
+  max-width: 400px;
+}
+/* footer */
+
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  line-height: 25px;
+  font-size: 18px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 05px 0 10px 0;
+}
+
+.footer_historia {
+  padding-right: 50px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 6px;
+}
+
+.footer_redes ul li a:hover {
+  border-color: #fff;
+}
+
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px 0;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
